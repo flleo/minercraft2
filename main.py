@@ -265,8 +265,5 @@ def update():
 
 from mob_system import *
 
-DEFAULT_FLET_PORT = 8501
-main = app.run()
-flet_port = int(os.getenv("FLET_PORT", DEFAULT_FLET_PORT))
-ft.app(name='hola', target=main, view=None, assets_dir="assets", port=flet_port, )
+app.run()
 
